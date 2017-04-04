@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   color: rgb(75,0,130);
 }
 
@@ -72,10 +72,37 @@ nav {
 
 
 #research h3{
-  color: rgb(112,128,144);
+  color: rgb(160,82,45);
 }
 
 #research li {
   margin: 5px;
+  color: rgb(112,128,144);
+}
+
+#research a {
   color: rgb(160,82,45);
+}
+
+#skills {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+
+.sk1 {
+  float:left;
+  margin-right: 60px;
+  color: rgb(221,160,221);
+}
+
+.sk1 li{
+  margin: 5px;
+}
+
+.sk2 {
+  color: rgb(135,206,250);
+}
+.sk2 li{
+  margin: 5px;
 }
