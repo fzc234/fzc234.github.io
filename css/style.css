@@ -61,8 +61,24 @@ nav {
   margin-bottom: 30px;
 }
 
+#education h2 {
+  margin-bottom: 5px;
+}
+
 #education p {
   margin: 8px;
+}
+
+#honors {
+  margin-bottom: 30px;
+}
+
+#honors h2{
+  margin-bottom: 5px;
+}
+
+#honors ol {
+  margin-top: 0;
 }
 
 #honors li{
@@ -70,9 +86,17 @@ nav {
   color: rgb(218,165,32);
 }
 
+#research {
+  margin-bottom: 30px;
+}
+
+#research h2 {
+  margin-bottom: 5px;
+}
 
 #research h3{
   color: rgb(160,82,45);
+  margin-top: 5px;
 }
 
 #research li {
@@ -90,19 +114,19 @@ nav {
 }
 
 
-.sk1 {
+#sk1 {
   float:left;
   margin-right: 60px;
   color: rgb(199,21,133);
 }
 
-.sk1 li{
+#sk1 li{
   margin: 5px;
 }
 
-.sk2 {
+#sk2 {
   color: rgb(138,43,226);
 }
-.sk2 li{
+#sk2 li{
   margin: 5px;
 }
