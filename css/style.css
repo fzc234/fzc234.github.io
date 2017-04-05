@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   background-color: rgb(255,255,240);
   max-width: 960px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -108,11 +109,17 @@ nav {
   color: rgb(160,82,45);
 }
 
-#skills {
-  margin-top: 30px;
-  margin-bottom: 40px;
+#research a:hover {
+  color: rgb(76,45,120);
 }
 
+#skills {
+  margin-bottom: 60px;
+}
+
+#skills h2 {
+  margin-bottom: 5px;
+}
 
 #sk1 {
   float:left;
