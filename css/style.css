@@ -117,13 +117,17 @@ nav {
   margin-bottom: 60px;
 }
 
+#skills ul {
+  margin-top: 5px;
+}
+
 #skills h2 {
   margin-bottom: 5px;
 }
 
 #sk1 {
   float:left;
-  margin-right: 60px;
+  margin-right: 20%;
   color: rgb(199,21,133);
 }
 
@@ -136,4 +140,24 @@ nav {
 }
 #sk2 li{
   margin: 5px;
+}
+
+#extra-activity h2 {
+  margin-bottom: 5px;
+}
+
+#extra-activity h3 {
+  color: rgb(160,82,45);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#extra-activity p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#extra-activity ul {
+  margin-top: 5px;
+  color: rgb(112,128,144);
 }
