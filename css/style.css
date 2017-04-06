@@ -127,6 +127,7 @@ nav li {
 #research h3{
   color: rgb(160,82,45);
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #research li {
@@ -147,6 +148,7 @@ nav li {
   background-color: #FEFCFF;
   padding-bottom: 20px;
   border: 2px outset #C2DFFF;
+  position: relative;
 }
 
 #skills ul {
@@ -170,7 +172,9 @@ nav li {
 
 #sk2 {
   color: rgb(199,21,133);
+  padding-top: 1px;
 }
+
 #sk2 li{
   margin: 5px;
 }
