@@ -157,6 +157,7 @@ nav li {
   margin-bottom: 5px;
 }
 
+
 #sk1 {
   float:left;
   margin-right: 20%;
@@ -168,11 +169,13 @@ nav li {
 }
 
 #sk2 {
-  color: rgb(138,43,226);
+  color: rgb(199,21,133);
 }
 #sk2 li{
   margin: 5px;
 }
+
+
 
 #extra-activity {
   background-color: #FEFCFF;
