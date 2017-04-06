@@ -17,6 +17,7 @@ h1,h2,h3 {
 h1 {
   font-size: 40px;
   color: rgb(75,0,130);
+  position: relative;
 }
 
 h2 {
@@ -41,7 +42,6 @@ a:hover {
 }
 
 header {
-    position:relative;
     left: 40%;
     color: rgb(100,149,237);
 }
@@ -50,12 +50,22 @@ header img{
   border-width: 3px;
   border-style: solid;
   border-color: rgb(220,220,220);
+  float:left;
+}
+
+#addr {
+  margin-top: 125px;
+  margin-bottom: 125px;
+  position: relative;
+  left: 10%;
+  font-size: 20px;
 }
 
 nav {
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 40px;
+  padding-top: 20px;
 }
 
 nav ul {
@@ -73,6 +83,8 @@ nav li {
 
 #education {
   margin-bottom: 30px;
+  background-color: #FEFCFF;
+  border: 2px outset #C2DFFF;
 }
 
 #education h2 {
@@ -85,6 +97,8 @@ nav li {
 
 #honors {
   margin-bottom: 30px;
+  background-color: #FEFCFF;
+  border: 2px outset #C2DFFF;
 }
 
 #honors h2{
@@ -97,11 +111,13 @@ nav li {
 
 #honors li{
   padding: 5px;
-  color: rgb(218,165,32);
+  color: rgb(80, 74, 75);
 }
 
 #research {
   margin-bottom: 30px;
+  background-color: #FEFCFF;
+  border: 2px outset #C2DFFF;
 }
 
 #research h2 {
@@ -127,7 +143,10 @@ nav li {
 }
 
 #skills {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  background-color: #FEFCFF;
+  padding-bottom: 20px;
+  border: 2px outset #C2DFFF;
 }
 
 #skills ul {
@@ -153,6 +172,11 @@ nav li {
 }
 #sk2 li{
   margin: 5px;
+}
+
+#extra-activity {
+  background-color: #FEFCFF;
+  border: 2px outset #C2DFFF;
 }
 
 #extra-activity h2 {
