@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Zicheng's Website</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Zicheng Fang</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/sliding_effect.js"></script>
   </head>
 
   <body>
-    <h1>Zicheng Fang</h1>
-    <p>This is my first web page!</p>
-    <ul>
-      <li><i>Hometown: </i>Huaibei,China</li>
-      <li><i>Age: </i>23</li>
-      <li><i>Major: </i>Electrical Engineering</li>
-    </ul>
+    <div id="container">
+      <header id="header1">
+        <h1>ZICHENG FANG</h1>
+        <div id="self">
+          <section id="self-intro">
+          <p>I am Zicheng Fang. I am an undergraduate student in University of Miami. My major is electrical engineering, and this is my last semester in UM. I will start my master program this September in University of California, Los Angeles, which is my dream school. My hard work paid off.</p>
 
-    <img src="octocat.png" alt="An octocat./Flickr." />
-    
+          <p>I come from China, and I have been in US for 5 years. I cannot forget the place where I grew up. Hometown, friends, family, food, I cannot wait to introduce all of them to you. Just explore my website.</p>
+          </section>
+
+        <nav>
+          <ul id="sliding-navigation">
+            <li class="sliding-element"><a href="index.html">Home</a></li>
+            <li class="sliding-element"><a href="resume.html">Resume</a></li>
+            <li class="sliding-element"><a href="research.html">Research</a></li>
+            <li class="sliding-element"><a href="design.html">Design</a></li>
+            <li class="sliding-element"><a href="photo.html">Photo Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+      <section id="selfie">
+        <img src="img/self2.png" alt="ZichengUM" />
+      </section>
+
+    </div>
+
   </body>
 
 </html>
