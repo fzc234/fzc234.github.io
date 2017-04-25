@@ -2,16 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/headhesive.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
     <title>Resume of Zicheng Fang</title>
   </head>
 
   <body>
     <div id="container">
-    <header class="banner">
+      <div id="all-nav">
+        <nav>
+          <ul id="sliding-navigation">
+            <li class="sliding-element"><a href="../index.html">Home</a></li>
+            <li class="sliding-element"><a href="resume.html">Resume</a></li>
+            <li class="sliding-element"><a href="research.html">Research</a></li>
+            <li class="sliding-element"><a href="design.html">Design</a></li>
+            <li class="sliding-element"><a href="photo.html">Photo Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    <header>
       <h1>Zicheng Fang</h1>
-      <img src="img/fang1.png" alt="Zicheng Fang" />
+      <img src="../img/fang1.png" alt="Zicheng Fang" />
       <address id="addr">
         <p>E-mail: <a href="mailto:z.fang1@umiami.edu">z.fang1@umiami.edu</a></p>
         <p>Phone: 305-343-6570</p>
@@ -19,7 +30,7 @@
       </address>
     </header>
 
-    <nav>
+    <nav id="main-header" class="lavalamp-menu">
       <ul>
         <li><a href="#education">Education</a></li>
         <li><a href="#honors">Honors</a></li>
@@ -27,6 +38,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#extra-activity">Extracurricular Activities</a></li>
       </ul>
+      <div class="lavalamp"></div>
     </nav>
 
     <main>
@@ -88,8 +100,7 @@
       <section id="skills">
         <h2>SKILLS</h2>
           <ul>
-            <section id="sk1">
-            <li><em>Computer Skills: </em>
+            <li id="sk1"><em>Computer Skills: </em>
               <ul>
                 <li>C++</li>
                 <li>MATLAB</li>
@@ -97,17 +108,14 @@
                 <li>MYSQL</li>
               </uL>
             </li>
-          </section>
 
-            <section id="sk2">
-            <li><em>Language Skills: </em>
+            <li id="sk2"><em>Language Skills: </em>
               <ul>
                 <li>Mandarin (Mother Tongue)</li>
                 <li>English (Excellent)</li>
                 <li>Japanese (Intermediate)</li>
               </ul>
             </li>
-          </section>
           </ul>
       </section>
 
@@ -166,14 +174,23 @@
       </section>
 
     </main>
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/headhesive.js"></script>
-    <script>
-      var banner = new headhesive('.banner');
-    </script>
-
   </div>
+
+  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/sliding_effect.js"></script>
+  <script type="text/javascript" src="../js/menuspy.js"></script>
+  <script>
+    var lavalampElm = document.querySelector('.lavalamp');
+    var positionLavalamp = function(activeElm) {
+      lavalampElm.style.width = activeElm.offsetWidth + 'px';
+      lavalampElm.style.left = activeElm.offsetLeft + 'px';
+    };
+    var elm = document.querySelector('#main-header');
+    var ms = new MenuSpy(elm, {
+      callback: positionLavalamp
+    });
+    positionLavalamp( elm.querySelector('li.active') );
+  </script>
 
   </body>
 </html>
