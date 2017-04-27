@@ -8,12 +8,12 @@
     <div id="container">
       <div id="all-nav">
         <nav>
-          <ul id="sliding-navigation">
-            <li class="sliding-element"><a href="../index.html">Home</a></li>
-            <li class="sliding-element"><a href="resume.html">Resume</a></li>
-            <li class="sliding-element"><a href="research.html">Research</a></li>
-            <li class="sliding-element"><a href="design.html">Design</a></li>
-            <li class="sliding-element"><a href="photo.html">Photo Gallery</a></li>
+          <ul id="horizontal-navigation">
+            <li class="sliding-element1"><a href="../index.html">Home</a></li>
+            <li class="sliding-element1"><a href="resume.html">Resume</a></li>
+            <li class="sliding-element1"><a href="research.html">Research</a></li>
+            <li class="sliding-element1"><a href="design.html">Design</a></li>
+            <li class="sliding-element1"><a href="photo.html">Photo Gallery</a></li>
           </ul>
         </nav>
       </div>
@@ -38,7 +38,7 @@
           <h2>Abstract</h2>
           <p>We are going to design a voice-controlled car. It will be demonstrated on a toy car. Basically, the setup is a voice recognition module mounted on an Arduino board and an additional Arduino board together as a complete system on the toy car. The VR Arduino board should be able to recognize voice commands on a real time basis. Then we can control the toy car by just saying “go left”, “go right”, “back” and “forward”. (The estimated operating range is the radius of 5m). Also, the system could recognize at least two languages (English and Chinese).</p>
 
-          <img id="f1-1" src="../img/f1-1.png" alt="Voice-Controlled car" />
+          <img id="f1-1" src="../img/f1-1.jpg" alt="Voice-Controlled car" />
         </section>
 
         <section id="introduction1">
@@ -71,15 +71,20 @@
         <section id="design-detail">
           <h2>Design Detail</h2>
           <article>
+            <div id="dd-left">
             <h3>I. Design Decisions</h3>
             <p class="impdec"><strong>Important decision 1: implementing the system on a toy car</strong></p>
             <p>Due to the limitation of the budget and limited real car knowledge of our group members, working on a real car would be prohibitive. Plus, as mentioned in the previous section, implementing the system on a real car is obviously a project in much grander scale: therefore, a toy car should be used to demonstrate the voice control system. The car should react to simple real time commands with precision. It should also have the minimum extent of safety measurements with the help of ultrasonic ranging devices installed outside of the car. The car should recognize as many commands as possible with given hardware limit. Although it’s a toy car, many factors (like those mentioned above) in real life affecting the viability of the project should be thoroughly considered.</p>
+            </div>
 
+            <div id="dd-right">
             <p class="impdec"><strong>Important decision 2: using 2 Arduino chips instead of one</strong></p>
             <p>We divide the functionality of the system into two Arduino chips: the first chip (main chip) controls the motors using the voice recognition module which requires a constant ongoing loop in the programming, the ultrasonic range finding device, on the other hand, requires constant pulse input and will feed signals back from its echo output on a regular basis, which requires a loop to perform calculation and handle the interrupt as well. Thus a second chip (monitoring chip) is needed. However, we also have the alternative method of using one Arduino to handle both ultrasonic interruption and voice recognition in the same time; it is totally achievable via manipulating the built in timer inside the Arduino chip (special thanks to Dr. John for advice), there will be additional pages explaining how to implement this and the reason for us to use two Arduinos instead of just one in the Appendix.</p>
+            </div>
 
+            <div id="comp">
             <h3>II. Components</h3>
-            <ul>
+            <ul id="components">
               <li>A toy car kit</li>
               <li>Two Arduino UNO chips</li>
               <li>One EasyVR module with microphone</li>
@@ -88,17 +93,23 @@
               <li>6V Batteries as power source</li>
               <li>Wires</li>
             </ul>
+          </div>
           </article>
+
+          <div id="vc-diagram">
           <h3>III. System Diagram &amp; Implementation Diagram</h3>
-          <img id="sdiagram" src="../img/f1-2.png" alt="System Diagram" />
-          <p>System Diagram</p>
-          <img id="idiagram" src="../img/f1-4.png" alt="Implementation Diagram" />
-          <p>Implementation Diagram</p>
+          <img id="sdiagram" src="../img/f1-2.jpg" alt="System Diagram" />
+          <p id="dp1">System Diagram</p>
+          <img id="idiagram" src="../img/f1-4.jpg" alt="Implementation Diagram" />
+          <p id="dp2">Implementation Diagram</p>
+          </div>
         </section>
 
         <section id="demo">
           <h2>Demo</h2>
+          <div id="dvideo">
           <iframe width="960" height="540" src="https://www.youtube.com/embed/WvsvJPIu6VY?rel=0" allowfullscreen></iframe>
+          </div>
         </section>
 
       </main>
@@ -107,6 +118,9 @@
 
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../js/sliding_effect.js"></script>
+    <!-- sliding_effect_horizontal.js is provided by Erin Brown -->
+    <script src="../js/sliding_effect_horizontal.js"></script>
+
 
   </body>
 

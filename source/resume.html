@@ -10,19 +10,19 @@
     <div id="container">
       <div id="all-nav">
         <nav>
-          <ul id="sliding-navigation">
-            <li class="sliding-element"><a href="../index.html">Home</a></li>
-            <li class="sliding-element"><a href="resume.html">Resume</a></li>
-            <li class="sliding-element"><a href="research.html">Research</a></li>
-            <li class="sliding-element"><a href="design.html">Design</a></li>
-            <li class="sliding-element"><a href="photo.html">Photo Gallery</a></li>
+          <ul id="horizontal-navigation">
+            <li class="sliding-element1"><a href="../index.html">Home</a></li>
+            <li class="sliding-element1"><a href="resume.html">Resume</a></li>
+            <li class="sliding-element1"><a href="research.html">Research</a></li>
+            <li class="sliding-element1"><a href="design.html">Design</a></li>
+            <li class="sliding-element1"><a href="photo.html">Photo Gallery</a></li>
           </ul>
         </nav>
       </div>
 
     <header>
       <h1>Zicheng Fang</h1>
-      <img src="../img/fang1.png" alt="Zicheng Fang" />
+      <img src="../img/fang1.jpg" alt="Zicheng Fang" />
       <address id="addr">
         <p>E-mail: <a href="mailto:z.fang1@umiami.edu">z.fang1@umiami.edu</a></p>
         <p>Phone: 305-343-6570</p>
@@ -174,23 +174,15 @@
       </section>
 
     </main>
+    <a href="#top" id="top-link">Top of Page</a>
   </div>
 
   <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../js/sliding_effect.js"></script>
-  <script type="text/javascript" src="../js/menuspy.js"></script>
-  <script>
-    var lavalampElm = document.querySelector('.lavalamp');
-    var positionLavalamp = function(activeElm) {
-      lavalampElm.style.width = activeElm.offsetWidth + 'px';
-      lavalampElm.style.left = activeElm.offsetLeft + 'px';
-    };
-    var elm = document.querySelector('#main-header');
-    var ms = new MenuSpy(elm, {
-      callback: positionLavalamp
-    });
-    positionLavalamp( elm.querySelector('li.active') );
-  </script>
+  <!-- sliding_effect_horizontal.js is provided by Erin Brown -->
+  <script src="../js/sliding_effect_horizontal.js"></script>
+
+  <script src="../js/top-link.js"></script>
 
   </body>
 </html>
