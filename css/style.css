@@ -98,8 +98,8 @@ h2 {
 }
 
 #self {
-  position: absolute;
-  width: 25%;
+  position: relative;
+  width: 30%;
   float: left;
   margin-right: 4%;
 }
@@ -110,7 +110,8 @@ h2 {
 }
 
 #selfie {
-  width:70%;
+  position: relative;
+  width: 70%;
   border-width: 3px;
   border-style: solid;
   border-color: rgb(220,220,220);
