@@ -397,6 +397,10 @@ nav li {
     border: 2px solid rgb(220,220,220);
 }
 
+#comp h3 {
+  margin-top: 25px;
+}
+
 #components {
   padding-left: 18px;
   margin-top: 5px;
