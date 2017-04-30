@@ -99,7 +99,7 @@ h2 {
 
 #self {
   position: absolute;
-  max-width: 33%;
+  width: 33%;
   float: left;
   margin-right: 4%;
 }
