@@ -423,3 +423,14 @@ nav li {
   margin-top: 10px;
   padding-bottom: 100px;
 }
+
+.thumb {
+  border: 1px solid #ccc;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  float: left;
+}
+
+.thumb:nth-child(3n+3) {
+  margin-right: 0;
+}
