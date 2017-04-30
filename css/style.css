@@ -99,7 +99,7 @@ h2 {
 
 #self {
   position: absolute;
-  width: 33%;
+  width: 25%;
   float: left;
   margin-right: 4%;
 }
@@ -110,15 +110,15 @@ h2 {
 }
 
 #selfie {
+  width:70%;
   border-width: 3px;
   border-style: solid;
   border-color: rgb(220,220,220);
-  float:right;
   margin-right: 10px;
 }
 
 #selfimg {
-  max-width: 60%;
+  width: 60%;
   float:right;
 }
 
