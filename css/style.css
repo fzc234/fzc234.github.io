@@ -99,7 +99,7 @@ h2 {
 
 #self {
   position: relative;
-  width: 30%;
+  width: 35%;
   float: left;
   margin-right: 4%;
 }
@@ -115,7 +115,6 @@ h2 {
   border-width: 3px;
   border-style: solid;
   border-color: rgb(220,220,220);
-  margin-right: 10px;
 }
 
 #selfimg {
