@@ -79,19 +79,6 @@ h2 {
   z-index: 10;
 }
 
-#top-link	{
-  display:none;
-  position:fixed;
-  right:5px;
-  bottom:5px;
-  color:green;
-  font-weight:bold;
-  text-decoration:none;
-  border:1px solid green;
-  background:Lightgreen;
-  padding:10px;
-}
-
 #header1 h1{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -436,6 +423,93 @@ nav li {
   float: left;
 }
 
-.thumb:nth-child(3n+3) {
+.re1 {
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.re2 {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-bottom: 24px;
+  float: left;
+}
+
+#re3 {
+  border: 1px solid #ccc;
+  float: left;
+  margin-top: 10px;
+  width: 50%;
+}
+
+#re4 {
+  border: 1px solid #ccc;
+  margin-top: 60px;
+  float: right;
+}
+
+.thumb:nth-child(3n+3), .re2:nth-child(3n+3) {
   margin-right: 0;
+  float:right;
+}
+
+#re-left, #re-left1, #re-right, #re-right1 {
+  width: 48%;
+  position: relative;
+  text-align: justify;
+}
+
+#re-left, #re-left1 {
+  float:left;
+  margin-right: 4%;
+}
+
+#re-right, #re-right1 {
+  float: right;
+}
+
+#re-rest, #reference {
+  float: left;
+}
+
+#re-left, #re-right {
+  margin-bottom: 20px;
+}
+
+#r-abstract h2 {
+  margin-bottom: 5px;
+}
+
+#r-abstract p {
+  margin-top: 10px;
+}
+
+#sonar {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.sonar1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#reference h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+#reference p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#reference {
+  padding-bottom: 100px;
+}
+
+#more {
+  font-size: 20px;
+  font-weight: bold;
 }
