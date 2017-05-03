@@ -20,6 +20,7 @@ h1 {
   font-size: 40px;
   color: rgb(75,0,130);
   position: relative;
+  margin-top: 5px;
 }
 
 h2 {
@@ -40,9 +41,10 @@ h2 {
   padding: 5px 15px;
   margin: 0;
   margin-bottom: 15px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid rgba(218,165,32,0.6);
   text-decoration: none;
   text-align: center;
+  background-color: rgba(240,230,140,0.4);
 }
 
 .sliding-element1 {
@@ -50,9 +52,10 @@ h2 {
   padding: 5px 15px;
   margin: 0;
   margin-bottom: 15px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid rgba(218,165,32,0.6);
   text-decoration: none;
   text-align: center;
+  background-color: rgba(240,230,140,0.4);
 }
 
 #horizontal-navigation .sliding-element1:last-child {
@@ -71,7 +74,7 @@ h2 {
   width: 150px;
   padding: 5px 10px 5px 20px;
   margin: 0 0 5px 0;
-  color: #eee;
+  color: rgb(0,191,255);
 }
 
 #horizontal-navigation .sliding-element1:last-child {
@@ -167,7 +170,7 @@ nav li {
 
 #education {
   margin-bottom: 30px;
-  background-color: #FEFCFF;
+  background-color: rgba(255,245,238,0.2);
   border: 2px outset #C2DFFF;
 }
 
@@ -181,7 +184,7 @@ nav li {
 
 #honors {
   margin-bottom: 30px;
-  background-color: #FEFCFF;
+  background-color: rgba(255,245,238,0.2);
   border: 2px outset #C2DFFF;
 }
 
@@ -200,7 +203,7 @@ nav li {
 
 #research {
   margin-bottom: 30px;
-  background-color: #FEFCFF;
+  background-color: rgba(255,245,238,0.2);
   border: 2px outset #C2DFFF;
 }
 
@@ -209,7 +212,8 @@ nav li {
 }
 
 #research h3{
-  color: rgb(160,82,45);
+  /*color: rgb(160,82,45);*/
+  color: rgb(80, 74, 75);
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -220,7 +224,7 @@ nav li {
 }
 
 #research a {
-  color: rgb(160,82,45);
+  color: rgb(80, 74, 75);
 }
 
 #research a:hover {
@@ -229,7 +233,7 @@ nav li {
 
 #skills {
   margin-bottom: 30px;
-  background-color: #FEFCFF;
+  background-color: rgba(255,245,238,0.2);
   padding-bottom: 20px;
   border: 2px outset #C2DFFF;
   position: relative;
@@ -247,7 +251,7 @@ nav li {
 #sk1 {
   float:left;
   margin-right: 20%;
-  color: rgb(199,21,133);
+  color: rgb(80, 74, 75);
 }
 
 #sk1 li{
@@ -255,7 +259,7 @@ nav li {
 }
 
 #sk2 {
-  color: rgb(199,21,133);
+  color: rgb(80, 74, 75);
   padding-top: 1px;
 }
 
@@ -266,7 +270,7 @@ nav li {
 
 
 #extra-activity {
-  background-color: #FEFCFF;
+  background-color: rgba(255,245,238,0.2);
   border: 2px outset #C2DFFF;
 }
 
@@ -275,7 +279,7 @@ nav li {
 }
 
 #extra-activity h3 {
-  color: rgb(160,82,45);
+  color: rgb(80, 74, 75);
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -512,4 +516,8 @@ nav li {
 #more {
   font-size: 20px;
   font-weight: bold;
+}
+
+.topnav {
+  margin-bottom: 10px;
 }
